@@ -1,0 +1,42 @@
+body{
+    
+    width: 80vw;
+    height: 90vh;
+    border-radius: 20px;
+   background-image: url(https://th.bing.com/th/id/R.a7901baeea35f9740deb30cf3e7e04ad?rik=nL%2bmWhrmFYdU8A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fV2i5sJo.jpg&ehk=0Xo02%2bAbVl%2fHtYWyR5JXfX7VOV0G6ERd%2bNy0m%2fUZoIc%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 1536px;
+    filter: brightness(60%);
+}
+h1{
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(40, 43, 37);
+    font-size: 40px;
+    font-style: oblique;
+   margin: 12% 0 0 40%;
+   text-shadow: 10px 10px 10px;
+}
+form{
+    text-align: center;
+    width: 20vw;
+    padding: 10%;
+    margin: -1%;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin: -8% 0 0 150%;
+    box-shadow: 5px 5px 10px;
+}
+label{
+    text-align: center;
+   margin: -10% 0 0 200%;
+   font-size: xx-large;
+   font-display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+
+
+
+}
