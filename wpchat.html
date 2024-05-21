@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        main{
+            margin: 0 auto;
+            border: 3px solid;
+            width: 30vw;
+            height: 89vh;
+            /* overflow-y: scroll; */
+            position: relative;
+            position: fixed;
+            border-style: groove;
+        }
+        header{
+            margin: 0 auto;
+            border: 1px solid;
+            width: 30vw;
+            height: 12vh;
+            position: fixed ;
+            background-color: rgb(1, 228, 39);
+           
+        }
+        section{
+            margin: 0 auto;
+            /* border: 1px solid; */
+            width: 30vw;
+            height: 77vh;
+            position: fixed;
+            top: 14vh;
+            overflow-y: scroll;
+            background-image: url(https://wallpapercave.com/wp/eTgd2o2.jpg);
+           
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+       
+
+        .profPic h1{
+            display: inline-block;
+        }
+        .Set{
+            display: inline-block;
+            position: absolute;
+            right: 1%;
+            top: 5vh;
+        }
+        .profPic{
+            display: inline-block;
+            position: absolute;
+            top: 1vh;
+            left: 3%;
+        }
+        .profPic h1{
+            margin-left: 1vh;
+            font-family:'Lucida Sans' ;
+            font-size: x-large;
+        }
+        .Set a{
+          margin-right: 1vh;
+          
+        }
+
+
+      article p:nth-child(even){
+
+        margin-left: 76%;
+        background-color: aqua;
+        border-radius: 10px;
+        text-align: end;
+
+      }
+
+
+      article p:nth-child(odd){
+
+      margin-left: 2%;
+      background-color: aquamarine;
+      width: 35%;
+      border-radius: 10px;
+
+      }
+      .acp1{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp2{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp3{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp4{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp5{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp6{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp7{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp8{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp9{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp0{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+      }
+      .acp01{
+        text-align: center;
+        margin-left: 25vh;
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+      }
+      h4{
+        background-color: white     ;
+        padding: 1%;
+        position: sticky;
+        top: 2vh;
+        width: 6vw;
+        left: 45%;
+        border-radius: 50vh;
+      }
+    </style>
+</head>
+<body>
+    <!-- Requirement :-
+          *** want to create an chat ui of an application
+           *** chat want to scroll up and down and date must be sticky up to the date chat
+             -->
+
+    <main>
+
+        <header>
+            <div class="profPic">
+                <i class="fa-solid fa-user fa-xl" style="font-size: 40px;"></i>
+                <h1>MY CHOISE</h1>
+            </div>
+            <div class="Set">
+                <a href=""><i class="fa-solid fa-phone-volume fa-xl"></i></a>
+                <a href=""><i class="fa-solid fa-video fa-xl"></i></a>
+                <a href=""><i class="fa-solid fa-bars fa-xl"></i></a>
+            </div> 
+        </header>
+        <section>
+
+            <article>
+                <h4>10/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+            
+            <article>
+                <h4>11/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+            <article>
+                <h4>12/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>13/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>14/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>15/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>16/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>17/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+            
+            <article>
+                <h4>18/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+          
+            <article>
+                <h4>19/05/2024</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>yesterday</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+           
+            <article>
+                <h4>today</h4>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+                <p>hi</p>
+                <p>hello</p>
+                <p>hw r u</p>
+                <p>fine and u</p>
+                <p>gud</p>
+                <p>had lanuch</p>
+                <p>yup! wau</p>
+                <p>ok</p>
+                <p>ha</p>
+                <p>hmm</p>
+            </article>
+        </section>
+
+    </main> 
+</body>
+</html>
