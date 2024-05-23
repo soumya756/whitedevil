@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            height: 80vh;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0%;
+            justify-content: space-around;
+            /* align-content: space-around; */
+            background-image: radial-gradient(rgb(44, 44, 78), rgb(73, 47, 47), rgb(92, 114, 92) );
+
+        }
+        .cd{
+            border: 1px solid black;
+            height: 10vh;
+            width: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="cd" style="width: 75vw; background-image: conic-gradient(violet, black, green, grey);"></div>
+    <div class="cd" style="width: 75vw; height: 40vh; background-image: linear-gradient(35deg,black, white, rgb(4, 4, 56), rgb(37, 80, 37), rgb(84, 84, 243));">
+    <div style="height: 35vh; width: 10vh; border: 1px solid black; margin: 12px; background-image: linear-gradient(blue, green, yellow, red);">
+    <div style="height: 35vh; width: 65vw; border: 1px solid black; margin: 0 0 0 80px; background-image: linear-gradient(55deg, black, wheat, blue, green, yellow, violet);">
+    <div style="border: 1px solid black; height: 12vh; width: 8vw; margin: 10px; background-image: linear-gradient(yellow, green, red, blue);"></div>
+    <div style="border: 1px solid black; height: 12vh; width: 8vw; margin: 42px 0 0 10px; background-image: linear-gradient(black, white, black, white);"></div>
+    <div style="border: 1px solid black; height: 12vh; width: 8vw; margin: -192px 0 0 180px; background-image: linear-gradient(green, black, wheat, red);"></div>
+    <div style="border: 1px solid black; height: 12vh; width: 8vw; margin: 40px 0 0 180px; background-image: linear-gradient(blue, green, yellow, red);"></div>
+    <div style="border: 1px solid black; height: 18vh; width: 12vw; margin: -136px 0 0 400px; background-image: linear-gradient(yellow, green, red, blue);"></div>
+    </div>
+    </div>
+    </div>
+    <div class="cd" style="height: 20vh; width: 75vw; background-image: linear-gradient(43deg,navy, green, black, violet);">
+    <div style="border: 1px solid black; height: 16vh; width: 73vw; margin: 10px; background-color: darkmagenta;">
+    <div style="border: 1px solid black; height: 12vh; width: 70vw; margin: 8.8px; background-image: radial-gradient(blue, black, rgb(112, 68, 68), green );"></div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
