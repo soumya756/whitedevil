@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>STRATEGY</title>
+    <style>
+      .manu{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+.cd{
+    display: flex;
+    height: 100vh;
+    width: 98vw;
+    background-image: url(../animals/top-bg-1.jpg);
+    background-size: 100px 100px norepeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tbrow1:nth-child(even){
+    background-color: lightgreen;
+}
+
+.button11{
+    background-color: skyblue; 
+    height: 6vh; 
+    width: 15vw; 
+    border-radius: 8px; 
+    font-size: 16px;
+    padding: 8px 24px;
+    text-transform: capitalize;
+    border: none;
+    margin-top: 0%;
+
+}
+#cd1{
+    border: 1px solid black;
+    height: 80vh;
+    width: 40vw;
+    border-radius: 6%;
+    margin:auto;
+    padding: 10px;
+    background-color: white;
+    opacity: 79%;
+    text-align: center;
+}
+.img11{
+    height: 60vh; 
+    width: 60vh; 
+    border-radius: 50%; 
+    border: 8px solid white; 
+    box-shadow: 1px 1px 10px black;
+
+}
+.img22{
+    height: 60vh; 
+    width: 60vh; 
+    border-radius: 50%; 
+    border: 8px solid white; 
+    box-shadow: 1px 1px 10px black;
+}
+.img33{
+    height: 60vh; 
+    width: 60vh; 
+    border-radius: 50%; 
+    border: 8px solid white; 
+    box-shadow: 1px 1px 10px black;
+}
+.input1{
+    background-color: white;
+    opacity: 1;
+    height: 8vh;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.input2{
+    height: 9vh; 
+    width: 50vh; 
+    border-radius: 8px; 
+    border: 0;
+}
+.input3{
+    height: 9vh; 
+    width: 50vh; 
+    border-radius: 8px; 
+    border: 0;
+}
+.input4{
+    height: 9vh; 
+    width: 50vh; 
+    border-radius: 8px; 
+    border: 0;
+}
+#urmsg1{
+    height: 34vh; 
+    width: 45vh; 
+    border-radius: 8px; 
+    border: 0;
+    margin: 0 0 0 6%;
+    font-size: larger;
+}
+.sendit{
+    height: 7vh;
+    width: 11vw;
+    border-radius: 8px;
+    border: 0;
+    background-color: blue;
+    color: white;
+    margin-left: 57%;
+    box-shadow: 1px 1px 15px blue;
+}
+
+.cd2{
+    display: flex;
+    padding: 5%;
+    
+
+}
+#p1{
+    padding: 10%;
+    font-size: large;
+}
+
+.cd3{
+    display: flex;
+    padding: 5%;
+
+}
+#p2{
+    padding: 10%;
+    font-size: large;
+}
+
+.cd4{
+    display: flex;
+    padding: 5%;
+    
+}
+#p3{
+    padding: 10%;
+    font-size: large;
+}
+.abcd{
+    display: flex;
+    justify-content: space-around;
+}
+.cd5{
+    
+    border: 1px solid rgb(146, 87, 201);
+    height: 100vh;
+    width:   98vw;
+    background-color: rgb(146, 87, 201);
+    text-align: center;
+}
+#p4{
+   font-size: large;
+}
+
+.tbhead{
+    border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	color: #3F3F67;
+	font-size: 1.8rem;
+	font-weight: 300;
+	background-color: white;
+	padding: 0.9rem;
+}
+.csup{
+    color: #3F3F67;
+	background-color: white;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: block;
+	font-weight: 400;
+    text-decoration: none;
+}
+.table1{
+    width: 100%;
+	margin-bottom: 40px;
+}
+#tbrow11:nth-child(even){
+    background-color:  #3F3F67;
+}
+#tbrow11:nth-child(odd){
+    background-color: #3F3F67;
+}
+#tbrow22:nth-child(even){
+    background-color: lightgreen;
+}
+#tbrow22:nth-child(odd){
+    background-color: lightgreen;
+}
+#tbrow33:nth-child(even){
+    background-color: #DDD3C1;
+}
+#tbrow33:nth-child(odd){
+    background-color: #DDD3C1;
+}
+.tbrow:first-child{
+    padding-top: 35px;
+}
+.tbrow:last-child{
+    padding-bottom: 35px;
+}
+.tbrow{
+    display: block;
+    padding: 20px 35px 0;
+}
+.cd6{
+    display: flex;
+}
+.cd7{
+    text-align: center; 
+}
+.cd8{
+    text-align: center;
+    border: 1px solid rgb(146, 87, 201);
+    height: 100%;
+    width: 98vw;
+    background-color: rgb(74, 42, 104);
+    color: white;
+}
+.cd9{
+    display: flex;
+}
+.cd10 i{
+   padding-top: 50px;
+    margin: 10px;
+}
+.srp{
+    font-size: small;
+}
+.srp1{
+    color: white; 
+    text-decoration: none;
+}
+@media screen and (min-width:50px) and (max-width:570px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    } 
+    .h1strategy{
+        text-align: center;
+        font-size: larger;
+    }
+    .cd{
+        width:100vw;        
+         }
+         #cd1{
+            width: 100% !important;
+         }
+         #cd1 .button11{
+            width: 60%;
+            text-align: center;
+         }
+         #cd1 .input1{
+            max-width: 200px;
+         }
+         .cd2, .cd3, .cd4{
+            display: block;
+         }
+         .cd2 img, .cd3 img, .cd4 img{
+            height: 30%;
+            width: 90% !important;
+         }
+         .cd6{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+         }
+         .hover1, .hover2, .hover3{
+            width: 100% !important;
+         }
+         .cd5{
+            height: 100%;
+         }
+         
+         .cd7{
+            width: 100%;
+            display: block;
+            margin-top: 20%;
+            margin-left: -50%;
+            font-size: 10px;
+         }
+        .cd8{
+            width: 100%;
+            height: 100%;
+        }
+         .cd9 p{
+        display: none;
+         }
+         .h3contact{
+            font-size: xx-large !important;
+            margin: 0 0 0 -50%;
+         }
+         .para{
+            font-size: small;
+            margin: 0 0 0 -50%;
+         }
+         .input2{
+            width: 100%;
+            height: 8%;
+            margin: 0 0 0 -60%;
+         }
+         .input3{
+            width: 100%;
+            height: 8%;
+            margin: 0 0 0 -60%;
+         }
+         .input4{
+            width: 100%;
+            height: 8%;
+           margin: 0 0 0 -60%;
+         }
+         #urmsg1{
+            margin: 80% 0 0 -191%;
+           
+         }
+         .cd10{
+            margin: 0 0 0 -80%;
+            font-size: medium;
+         }
+         .footer p{
+                font-size: 10px;
+         }
+         .sendit{
+            margin: 0 0 0 -150%;
+            width: 50%;
+         }
+}
+
+    </style>
+  </head>
+  <body>
+    <main class="manu">
+      <div class="cd">
+        <div id="cd1">
+          <br />
+          <i class="fa-solid fa-gears" style="font-size: 70px"></i>
+          <br />
+          <h1 class="h1strategy">STRATEGY</h1>
+          <p style="color: black">Another Bootstrap 4.0 Website Templete</p>
+          <br />
+          <input
+            name="search"
+            class="input1"
+            type="text"
+            id="inputid"
+            placeholder="Type a KeyWord...."
+          /><br /><br />
+          <button class="button11">search</button>
+        </div>
+        <br />
+      </div>
+      <div class="two">
+        <div class="cd2">
+          <img src="../animals/01.jpg" class="img11" />
+          <p id="p1">
+            <b>Interdum et malesuada fames</b><br /><br />Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Odit non molestiae repellendus
+            ullam quibusdam libero dolor animi deserunt cupiditate voluptatem?
+            Suscipit blanditiis ad eligendi quam! Architecto sapiente odio
+            mollitia expedita.
+          </p>
+        </div>
+        <div class="cd3">
+          <img src="../animals/23.jpg" class="img22" />
+          <p id="p2">
+            <b>Interdum et malesuada fames</b><br /><br />Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Pariatur, et doloremque libero,
+            vitae dicta deleniti distinctio ab doloribus perspiciatis, quidem
+            iste qui nam tempore est! Quasi fugiat mollitia in accusantium!
+          </p>
+        </div>
+        <div class="cd4">
+          <img src="../animals/1234.jpg" class="img33" />
+          <p id="p3">
+            <b>Interdum et malesuada fames</b><br /><br />Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Odit non molestiae repellendus
+            ullam quibusdam libero dolor animi deserunt cupiditate voluptatem?
+            Suscipit blanditiis ad eligendi quam! Architecto sapiente odio
+            mollitia expedita.
+          </p>
+        </div>
+      </div>
+      <div class="cd5">
+        <div>
+          <p id="p4">
+            <b>choose your plan</b><br /><br />vitae dicta deleniti distinctio
+            ab doloribus perspiciatis,<br />
+            quidem iste qui nam tempore est! Quasi fugiat mollitia in
+            accusantium!
+          </p>
+        </div>
+        <br /><br /><br />
+        <div class="cd6">
+          <table class="table1">
+            <thead>
+              <tr>
+                <th class="tbhead">Silver Plan</th>
+              </tr>
+            </thead>
+            <tbody class="tbody1">
+              <tr class="tbrow" id="tbrow11">
+                <td class="tabledata1">Sed porttitor lobortis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow11">
+                <td class="tabledata1">10 sit amet luctus sapien</td>
+              </tr>
+              <tr class="tbrow" id="tbrow11">
+                <td class="tabledata1">15 eget sagittis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow11">
+                <td class="tabledata1">20 aliquam eros nec tortor</td>
+              </tr>
+              <tr class="tbrow" id="tbrow11">
+                <td class="tabledata1">30 vel suscipit turpis</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="signupp">
+                  <a href="#" class="csup">Sign up</a>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="table1">
+            <thead>
+              <tr>
+                <th class="tbhead">Titanium Plan</th>
+              </tr>
+            </thead>
+            <tbody class="tbody1">
+              <tr class="tbrow" id="tbrow22">
+                <td class="tabledata2">Sed porttitor lobortis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow22">
+                <td class="tabledata2">20 sit amet luctus sapien</td>
+              </tr>
+              <tr class="tbrow" id="tbrow22">
+                <td class="tabledata2">25 eget sagittis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow22">
+                <td class="tabledata2">35 aliquam eros nec tortor</td>
+              </tr>
+              <tr class="tbrow" id="tbrow22">
+                <td class="tabledata2">45 vel suscipit turpis</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="signupp">
+                  <a href="#" class="csup">Sign up</a>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="table1">
+            <thead>
+              <tr>
+                <th class="tbhead">Titanium Plan</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr class="tbrow" id="tbrow33">
+                <td class="tabledata3">Sed porttitor lobortis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow33">
+                <td class="tabledata3">20 sit amet luctus sapien</td>
+              </tr>
+              <tr class="tbrow" id="tbrow33">
+                <td class="tabledata3">25 eget sagittis</td>
+              </tr>
+              <tr class="tbrow" id="tbrow33">
+                <td class="tabledata3">35 aliquam eros nec tortor</td>
+              </tr>
+              <tr class="tbrow" id="tbrow33">
+                <td class="tabledata3">45 vel suscipit turpis</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="signupp">
+                  <a href="#" class="csup">Sign up</a>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="cd7">
+        <div style="width: 80vh; padding-left: 30%">
+          <h2 style="margin-top: 7%">Testimonials</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            excepturi in recusandae soluta temporibus.
+          </p>
+          <br /><br />
+          <img
+            src="../animals/baby.jpg"
+            style="
+              border-radius: 50%;
+              border: 4px solid white;
+              box-shadow: 1px 1px 10px grey;
+            "
+          /><br /><br /><br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            mollitia tempore distinctio doloribus.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sint excepturi in recusandae soluta
+            temporibus.
+          </p>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="cd8">
+        <div style="width: 80vh; padding-left: 30%">
+          <h3 class="h3contact">Contact Us</h3>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia rem
+            magnam accusamus nemo animi qui ut explicabo similique velit unde!.
+          </p>
+          <br /><br />
+          <div class="cd9">
+            <div>
+              <input
+                class="input2"
+                id="input22"
+                type="text"
+                placeholder="NAME"
+              /><br /><br />
+              <input
+                class="input3"
+                id="input33"
+                type="email"
+                placeholder="EMAIL"
+              /><br /><br />
+              <input
+                class="input4"
+                id="input44"
+                type="text"
+                placeholder="SUBJECT"
+              /><br /><br />
+            </div>
+            <div>
+              <textarea
+                name="Message"
+                id="urmsg1"
+                placeholder="Your Message"
+              ></textarea
+              ><br /><br />
+              <button class="sendit">Send It</button>
+            </div>
+          </div>
+          <div class="cd10">
+            <a href="https://www.facebook.com/"
+              ><i
+                class="fa-brands fa-facebook-f"
+                style="font-size: x-large; color: white"
+              ></i
+            ></a>
+            <a href="https://www.google.co.in/"
+              ><i
+                class="fa-brands fa-google-plus-g"
+                style="font-size: x-large; color: white"
+              ></i
+            ></a>
+            <a href="https://x.com/SoumyaPand13918"
+              ><i
+                class="fa-brands fa-twitter"
+                style="font-size: x-large; color: white"
+              ></i
+            ></a>
+            <a href="www.linkedin.com/in/soumya-ranjan-panda-36ba58307"
+              ><i
+                class="fa-brands fa-linkedin-in"
+                style="font-size: x-large; color: white"
+              ></i></a
+            ><br />
+          </div>
+          
+        </div>
+        <div class="footer">
+          <p class="srp">
+            Copyright 2016 Your Company | Designed by
+            <a 
+              href="http://127.0.0.1:5500/PROGRAMES/25.05.2024.html"
+              class="srp1"
+              >SOUMYA</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
