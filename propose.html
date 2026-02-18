@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Girl💖</title>
+
+<style>
+:root {
+    --size: min(60vw, 220px);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #000000, #12001a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    color: white;
+}
+
+/* HEART */
+.heart {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    transform: rotate(-45deg);
+    animation: beat 1.2s infinite;
+    cursor: pointer;
+    filter: drop-shadow(0 0 20px #ff1a8c)
+            drop-shadow(0 0 40px #ff66cc);
+}
+
+.shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0066, #ff66cc);
+}
+
+.shape::before,
+.shape::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0066, #ff66cc);
+    border-radius: 50%;
+}
+
+.shape::before { top: -50%; }
+.shape::after { left: 50%; }
+
+/* TEXT INSIDE HEART */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 10;
+    font-size: clamp(16px, 4vw, 26px);
+    font-weight: bold;
+    text-shadow: 0 0 10px white, 0 0 20px #ff66cc;
+    pointer-events: none;
+}
+
+/* MESSAGE */
+.message {
+    margin-top: 25px;
+    font-size: clamp(18px, 4vw, 28px);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s ease;
+    text-shadow: 0 0 10px #ff66cc;
+}
+
+.message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.yes-btn, .no-btn {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.yes-btn {
+    background: linear-gradient(45deg, #ff0066, #ff66cc);
+    color: white;
+    box-shadow: 0 0 15px #ff66cc;
+}
+
+.no-btn {
+    background: #444;
+    color: white;
+    position: relative;
+}
+
+.yes-btn.show,
+.no-btn.show {
+    display: inline-block;
+}
+
+/* ANIMATIONS */
+@keyframes beat {
+    0% { transform: rotate(-45deg) scale(1); }
+    25% { transform: rotate(-45deg) scale(1.1); }
+    50% { transform: rotate(-45deg) scale(1); }
+    75% { transform: rotate(-45deg) scale(1.1); }
+    100% { transform: rotate(-45deg) scale(1); }
+}
+
+.zoom {
+    animation: zoom 0.4s ease;
+}
+
+@keyframes zoom {
+    50% { transform: rotate(-45deg) scale(1.4); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" onclick="nextStep()">
+    <div class="shape"></div>
+    <div class="text"> 💖 </div>
+</div>
+
+<div class="message" id="msg"></div>
+
+<div class="buttons">
+    <button class="yes-btn" id="yesBtn" onclick="sayYes()">YES 💖</button>
+    <button class="no-btn" id="noBtn" onclick="moveNo()">NO 😅</button>
+</div>
+
+<script>
+let step = 0;
+const msg = document.getElementById("msg");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const heart = document.querySelector(".heart");
+
+function nextStep() {
+    heart.classList.remove("zoom");
+    void heart.offsetWidth;
+    heart.classList.add("zoom");
+
+    step++;
+
+    if (step === 1) {
+        msg.textContent = "Hey 💖… 💫";
+        msg.classList.add("show");
+    } 
+    else if (step === 2) {
+        msg.textContent = "I have something to ask 💓";
+    } 
+    else if (step === 3) {
+        msg.textContent = "Will you be mine forever? 💍";
+        yesBtn.classList.add("show");
+        noBtn.classList.add("show");
+    }
+}
+
+function sayYes() {
+    msg.textContent = "She said YES 💖🎉";
+    yesBtn.style.display = "none";
+    noBtn.style.display = "none";
+}
+
+/* NO button runs away */
+function moveNo() {
+    const x = Math.random() * 200 - 100;
+    const y = Math.random() * 200 - 100;
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+}
+</script>
+
+</body>
+</html>
